@@ -2,7 +2,7 @@ import { products } from "@/data/products"
 import ProductDetails from "./ProductDetails"
 
 export default function ProductPage({ params }: { params: { id: string } }) {
-  const product = products.find((p) => String(p.id) === params?.id)
+  const product = products.find((p) => p.id === Number(params.id));
 
   if (!product) {
     return <div>Product not found</div>
@@ -11,9 +11,8 @@ export default function ProductPage({ params }: { params: { id: string } }) {
   return <ProductDetails product={product} />
 }
 
-// 👇 generateStaticParams để Next.js biết build route nào
 export async function generateStaticParams() {
   return products.map((product) => ({
-    id: product?.id
+    id: product.id.toString(), // 👈 ép kiểu về string
   }));
 }
