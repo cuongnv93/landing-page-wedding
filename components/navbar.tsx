@@ -9,7 +9,6 @@ import AuthModal from "./auth-modal";
 import CheckoutModal from "./checkout-modal";
 import { useCart } from "@/contexts/cart-context";
 
-// Component con: Logo
 function Logo() {
   return (
     <Link href="/" className="font-bold text-xl">
