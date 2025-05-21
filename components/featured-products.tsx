@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { products } from "@/data/products";
+import { Button } from "../components/ui/button";
+import { products } from "../data/products";
 import ProductCard from "./ProductCard";
 
 const containerVariants = {

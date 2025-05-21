@@ -1,12 +1,12 @@
-import React, { Suspense } from "react";
-import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
+import React from "react";
+import Footer from "../components/footer";
+import Navbar from "../components/navbar";
 
 // Import các component con
-import Hero from "@/components/hero";
-import FeaturedProducts from "@/components/featured-products";
-import Benefits from "@/components/benefits";
-import Question from "@/components/question";
+import Hero from "../components/hero";
+import FeaturedProducts from "../components/featured-products";
+import Benefits from "../components/benefits";
+import Question from "../components/question";
 
 export default function Home() {
   return (
