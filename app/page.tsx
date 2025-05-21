@@ -2,13 +2,11 @@ import React, { Suspense } from "react";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
-// Lazy load các component con
-const Hero = React.lazy(() => import("@/components/hero"));
-const FeaturedProducts = React.lazy(
-  () => import("@/components/featured-products")
-);
-const Benefits = React.lazy(() => import("@/components/benefits"));
-const Question = React.lazy(() => import("@/components/question"));
+// Import các component con
+import Hero from "@/components/hero";
+import FeaturedProducts from "@/components/featured-products";
+import Benefits from "@/components/benefits";
+import Question from "@/components/question";
 
 export default function Home() {
   return (
