@@ -1,4 +1,5 @@
-import { products } from "@/data/products"
+
+import { products } from "../../../data/products";
 import ProductDetails from "./ProductDetails"
 
 export default function ProductPage({ params }: { params: { id: string } }) {

@@ -3,11 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ShoppingCart, Search, Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Button } from "../components/ui/button";
+import { Badge } from "../components/ui/badge";
 import AuthModal from "./auth-modal";
 import CheckoutModal from "./checkout-modal";
-import { useCart } from "@/contexts/cart-context";
+import { useCart } from "../contexts/cart-context";
 
 function Logo() {
   return (

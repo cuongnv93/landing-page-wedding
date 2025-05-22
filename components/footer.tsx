@@ -10,8 +10,8 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Input } from "../components/ui/input";
+import { Button } from "../components/ui/button";
 import { motion } from "framer-motion";
 
 const containerVariants = {

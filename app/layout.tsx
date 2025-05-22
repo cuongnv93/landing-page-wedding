@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { CartProvider } from '@/contexts/cart-context'
+import { CartProvider } from '../contexts/cart-context'
 import { Toaster } from 'sonner'
 
 const inter = Inter({ subsets: ['latin'] })
